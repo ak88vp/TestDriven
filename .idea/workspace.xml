@@ -2,19 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="618ccac6-16fd-481c-86c0-307435734695" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Account/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Account/Album.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Account/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Account/ManagerAcc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestTest/AbsoluteNumberCalculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestTest/CheckNextDay/CheckNextDay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestTest/CheckNextDay/TestNextDay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestTest/Test1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbsoluteNumberCalculator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CheckNextDay/CheckNextDay.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CheckNextDay/TestNextDay.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test1.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MainACC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ManagerSong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ManiAlbum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Song.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestTest/Account/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestTest/Account/Album.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestTest/Account/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestTest/Account/ManagerAcc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Account/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Album.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Account/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Account/ManagerAcc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ManagerAcc.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +35,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="20chD8HGysTBY3Xab5kmJHt9ky7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -44,15 +55,17 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MainACC">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Account.Main" />
       <module name="TestTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Account.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -60,8 +73,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainACC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainACC" />
+      <module name="TestTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManiAlbum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ManiAlbum" />
+      <module name="TestTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="TestTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainACC" />
+        <item itemvalue="Application.ManiAlbum" />
+        <item itemvalue="Application.main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -75,6 +112,22 @@
       <option name="presentableId" value="Default" />
       <updated>1636349662965</updated>
       <workItem from="1636349665949" duration="3460000" />
+      <workItem from="1636353740961" duration="92000" />
+      <workItem from="1636363494119" duration="738000" />
+      <workItem from="1636381417386" duration="1831000" />
+      <workItem from="1636442150268" duration="322000" />
+      <workItem from="1636466770870" duration="7961000" />
+      <workItem from="1636506369451" duration="1000" />
+      <workItem from="1636506513208" duration="2000" />
+      <workItem from="1636506609970" duration="746000" />
+      <workItem from="1636508016032" duration="6923000" />
+      <workItem from="1636516915582" duration="744000" />
+      <workItem from="1636526577903" duration="6542000" />
+      <workItem from="1636535363820" duration="5000" />
+      <workItem from="1636553474226" duration="2108000" />
+      <workItem from="1636555687466" duration="2363000" />
+      <workItem from="1636558388720" duration="56000" />
+      <workItem from="1636558464004" duration="661000" />
     </task>
     <servers />
   </component>

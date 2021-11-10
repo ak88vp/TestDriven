@@ -1,16 +1,12 @@
-package Account;
-
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Account {
+public  class Account implements manager<Album>, Serializable {
     private String name;
     private String pass;
     ArrayList<Album> ListAlbum=new ArrayList<Album>();
     public Account(){
     }
-//    public static Account getInstance(){return instance;}
-//    private static final Account instance=new Account();
-
     public Account(String name, String pass, ArrayList<Album> listAlbum) {
         this.name = name;
         this.pass = pass;
@@ -53,5 +49,48 @@ public class Account {
                 ", pass='" + pass + '\'' +
                 ", ListAlbum=" + ListAlbum +
                 '}';
+    }
+
+    @Override
+    public void add(Album album) {
+        ListAlbum.add(album);
+        print();
+
+    }
+
+    @Override
+    public void delete(String name) {
+        ListAlbum.remove(find(name));
+        print();
+    }
+
+    @Override
+    public int find(String name) {
+        for (int i = 0; i < ListAlbum.size(); i++) {
+            if(ListAlbum.get(i).getName().equals(name)){
+                System.out.println(ListAlbum.get(i).toString());
+                System.out.println("--------------------");
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    @Override
+    public void print() {
+        for (Album album:ListAlbum
+             ) {
+            System.out.println(album);
+
+        }
+    }
+
+    @Override
+    public void update(String name, Album album ){
+        print();
+    }
+    public void update1(String name, String newName) {
+        ListAlbum.get(find(name)).setName(newName);
+        print();
     }
 }
